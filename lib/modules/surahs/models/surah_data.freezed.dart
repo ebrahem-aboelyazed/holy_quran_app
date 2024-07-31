@@ -21,13 +21,19 @@ SurahData _$SurahDataFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$SurahData {
   int get number => throw _privateConstructorUsedError;
+
   String get name => throw _privateConstructorUsedError;
+
   String get englishName => throw _privateConstructorUsedError;
+
   String get englishNameTranslation => throw _privateConstructorUsedError;
+
   int get numberOfAyahs => throw _privateConstructorUsedError;
+
   String get revelationType => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
   @JsonKey(ignore: true)
   $SurahDataCopyWith<SurahData> get copyWith =>
       throw _privateConstructorUsedError;
@@ -37,6 +43,7 @@ mixin _$SurahData {
 abstract class $SurahDataCopyWith<$Res> {
   factory $SurahDataCopyWith(SurahData value, $Res Function(SurahData) then) =
       _$SurahDataCopyWithImpl<$Res, SurahData>;
+
   @useResult
   $Res call(
       {int number,
@@ -54,6 +61,7 @@ class _$SurahDataCopyWithImpl<$Res, $Val extends SurahData>
 
   // ignore: unused_field
   final $Val _value;
+
   // ignore: unused_field
   final $Res Function($Val) _then;
 
@@ -102,6 +110,7 @@ abstract class _$$SurahDataImplCopyWith<$Res>
   factory _$$SurahDataImplCopyWith(
           _$SurahDataImpl value, $Res Function(_$SurahDataImpl) then) =
       __$$SurahDataImplCopyWithImpl<$Res>;
+
   @override
   @useResult
   $Res call(
@@ -242,16 +251,22 @@ abstract class _SurahData implements SurahData {
 
   @override
   int get number;
+
   @override
   String get name;
+
   @override
   String get englishName;
+
   @override
   String get englishNameTranslation;
+
   @override
   int get numberOfAyahs;
+
   @override
   String get revelationType;
+
   @override
   @JsonKey(ignore: true)
   _$$SurahDataImplCopyWith<_$SurahDataImpl> get copyWith =>

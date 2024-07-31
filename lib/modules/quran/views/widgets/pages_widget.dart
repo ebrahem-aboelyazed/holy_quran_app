@@ -27,7 +27,7 @@ class PagesWidget extends StatelessWidget {
               : EdgeInsets.zero,
           margin: pageIndex == 0 || pageIndex == 1
               ? EdgeInsets.symmetric(vertical: width * .34)
-              : const EdgeInsets.symmetric(vertical: 32, horizontal: 8),
+              : const EdgeInsets.symmetric(vertical: 8, horizontal: 8),
           child: SingleChildScrollView(
             child: RepaintBoundary(
               child: Column(

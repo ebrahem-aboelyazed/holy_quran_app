@@ -36,7 +36,7 @@ class QuranBottomWidget extends StatelessWidget {
               ),
             ),
           ),
-          if(hizb.isNotEmpty) ... {
+          if (hizb.isNotEmpty) ...{
             Container(),
           },
           Container(),

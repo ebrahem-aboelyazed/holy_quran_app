@@ -48,14 +48,15 @@ class _QuranPageState extends State<QuranPage> {
           itemBuilder: (context, i) {
             final isMobile = Responsive.isMobile(context) ||
                 Responsive.isMobileLarge(context);
+            final padding = isMobile
+                ? EdgeInsets.zero
+                : const EdgeInsets.symmetric(horizontal: 32);
             return Center(
               child: Padding(
-                padding: isMobile
-                    ? EdgeInsets.zero
-                    : const EdgeInsets.symmetric(horizontal: 32),
+                padding: padding,
                 child: Column(
                   children: [
-                    const SizedBox(height: 16),
+                    const SizedBox(height: 8),
                     TopTitleWidget(index: i),
                     Expanded(
                       child: Center(
@@ -66,7 +67,7 @@ class _QuranPageState extends State<QuranPage> {
                       ),
                     ),
                     QuranBottomWidget(index: i),
-                    const SizedBox(height: 16),
+                    const SizedBox(height: 8),
                   ],
                 ),
               ),

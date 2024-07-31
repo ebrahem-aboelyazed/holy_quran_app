@@ -1,6 +1,6 @@
 import 'package:audio_service/audio_service.dart';
-import 'package:just_audio/just_audio.dart';
 import 'package:holy_quran/modules/audio/audio.dart';
+import 'package:just_audio/just_audio.dart';
 
 class QuranAudioHandler extends BaseAudioHandler
     with QueueHandler, SeekHandler {

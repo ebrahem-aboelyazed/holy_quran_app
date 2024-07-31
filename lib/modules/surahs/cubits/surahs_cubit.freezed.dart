@@ -26,6 +26,7 @@ mixin _$SurahsState {
     required TResult Function(Failure failure) notLoaded,
   }) =>
       throw _privateConstructorUsedError;
+
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
@@ -47,6 +48,7 @@ mixin _$SurahsState {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
+
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(SurahsInitial value) initial,
@@ -57,6 +59,7 @@ mixin _$SurahsState {
     required TResult Function(SurahsNotLoaded value) notLoaded,
   }) =>
       throw _privateConstructorUsedError;
+
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(SurahsInitial value)? initial,
@@ -92,9 +95,9 @@ class _$SurahsStateCopyWithImpl<$Res, $Val extends SurahsState>
     implements $SurahsStateCopyWith<$Res> {
   _$SurahsStateCopyWithImpl(this._value, this._then);
 
-  // ignore: unused_field
+// ignore: unused_field
   final $Val _value;
-  // ignore: unused_field
+// ignore: unused_field
   final $Res Function($Val) _then;
 }
 
@@ -643,7 +646,7 @@ class _$SurahsLoadedImpl implements SurahsLoaded {
   @override
   List<SurahData> get surahs {
     if (_surahs is EqualUnmodifiableListView) return _surahs;
-    // ignore: implicit_dynamic_type
+// ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_surahs);
   }
 

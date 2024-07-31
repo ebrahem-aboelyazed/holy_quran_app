@@ -9,4 +9,3 @@ export './views/widgets/quran_bottom_widget.dart';
 export './views/widgets/quran_header.dart';
 export './views/widgets/top_title_widget.dart';
 export './views/widgets/verses_view.dart';
-

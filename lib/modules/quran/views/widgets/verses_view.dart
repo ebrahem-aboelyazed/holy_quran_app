@@ -35,7 +35,7 @@ class _VersesViewState extends State<VersesView> {
   Widget build(BuildContext context) {
     final cubit = context.read<QuranCubit>();
     return FittedBox(
-      fit: BoxFit.fitHeight,
+      fit: BoxFit.fitWidth,
       child: BlocBuilder<QuranCubit, QuranState>(
         builder: (context, state) {
           return RichText(

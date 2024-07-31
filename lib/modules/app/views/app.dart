@@ -35,20 +35,25 @@ class App extends StatelessWidget {
           },
         ),
       ],
-      child: const MaterialApp(
-        debugShowCheckedModeBanner: false,
-        locale: Locale('ar'),
-        builder: DevicePreview.appBuilder,
-        home: SurahsPage(),
-        localizationsDelegates: [
-          GlobalMaterialLocalizations.delegate,
-          GlobalWidgetsLocalizations.delegate,
-          GlobalCupertinoLocalizations.delegate,
-        ],
-        supportedLocales: [
-          Locale('ar'),
-          Locale('en'),
-        ],
+      child: DevicePreview(
+        builder: (context) {
+          return const MaterialApp(
+            useInheritedMediaQuery: true,
+            debugShowCheckedModeBanner: false,
+            locale: Locale('ar'),
+            builder: DevicePreview.appBuilder,
+            home: SurahsPage(),
+            localizationsDelegates: [
+              GlobalMaterialLocalizations.delegate,
+              GlobalWidgetsLocalizations.delegate,
+              GlobalCupertinoLocalizations.delegate,
+            ],
+            supportedLocales: [
+              Locale('ar'),
+              Locale('en'),
+            ],
+          );
+        },
       ),
     );
   }

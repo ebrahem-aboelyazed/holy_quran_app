@@ -2,9 +2,9 @@ import 'dart:convert';
 
 import 'package:dartz/dartz.dart';
 import 'package:flutter/services.dart';
-import 'package:injectable/injectable.dart';
 import 'package:holy_quran/core/core.dart';
 import 'package:holy_quran/modules/surahs/surahs.dart';
+import 'package:injectable/injectable.dart';
 
 @LazySingleton(as: SurahsService)
 class SurahsServiceImpl implements SurahsService {
